@@ -12,7 +12,7 @@ Este projeto ainda está em desenvolvimento e pode passar por melhorias no futur
 
 ## Visualizando o Projeto
 
-Você pode visualizar o projeto acessando [este link](#).
+Você pode visualizar o projeto acessando [este link](https://gabrielmarcolino23.github.io/gabrielmarcolino-portfolio/).
 
 ## Tecnologias Utilizadas
 
