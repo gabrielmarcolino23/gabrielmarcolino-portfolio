@@ -1,0 +1,806 @@
+/*Estilo Geral*/
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    height: 100vh;
+   
+
+}
+
+.interface {
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilo do botão */
+.btn-custom {
+    font-family: "Electrolize", sans-serif;
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #2E58FF;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.btn-custom:hover {
+    box-shadow: 0 0 10px 0 #2E58FF;
+    transform: scale(1.05);
+}
+
+/*Estilo do Header*/
+
+header {
+    padding: 10px 4%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;   
+    width: 100%;
+}
+
+header > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Estilo do Header - Menu */
+
+header a{
+    font-family : "Electrolize", sans-serif;
+    font-size: 16px;
+    color: black;  
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-weight: 800;
+    
+    
+}
+
+header nav ul li a:hover {
+    color: #2E58FF;
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 25px;
+}
+
+
+
+/*Estilo do Header - Logo */
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo p a{
+    font-family: "Electrolize", sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    font-style: normal;
+    flex-grow: 1;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+header .logo p a:hover {
+    color: #2E58FF;
+}
+
+
+header .logo .foto-logo {
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+
+/*Estilo do Header - Menu Mobile */
+.menu-mobile-icon {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+   
+    
+}
+
+.menu-mobile.open {
+    display: block;
+    
+}
+
+
+
+.menu-mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.menu-mobile nav ul li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-mobile nav ul li a {
+    transition: color 0.3s ease;
+    
+}
+
+.menu-mobile-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile-icon button img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-mobile nav ul li a:hover {
+    color: #2E58FF;
+} 
+
+
+
+
+
+
+/*Estilo do topo*/
+
+section.topo-site {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 4%;
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);;
+    background-position: center;
+    background-size: cover;
+    
+}
+.mobile-text {
+    display: none; /* Oculta o texto específico para dispositivos móveis */
+}
+
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+section.topo-site h1 {
+    font-family: "Electrolize", sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #000000;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.topo-site h1 span {
+    color: #2E58FF;
+    font-size: 42px;
+}
+
+section.topo-site p {
+    font-family: "Electrolize", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin: 40px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+section.topo-site .txt-topo-site {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Estilo do Sobre*/
+
+section.sobre {
+    padding: 80px 4%;
+    background-color: #fafafa;
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Estilo do titulo sobre */
+
+
+.titulo {
+    font-family: 'Electrolize', sans-serif;
+    display: block;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
+    margin-top: 0;
+}
+
+.titulo::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #2E58FF;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* Estilo do texto sobre */
+
+.sobre .txt-sobre {
+    color: #000000;
+   
+}
+
+.sobre .txt-sobre h2 {
+    font-family: "Electrolize", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #2E58FF;
+    display: block;
+
+}
+
+.sobre .txt-sobre p {
+    font-family: "Electrolize", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Estilo do botão social - sobre */
+
+.sobre .txt-sobre .btn-social button {
+    font-family: "Electrolize", sans-serif;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #2e58ff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+    margin: 0 10px;
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+    box-shadow: 0 0 10px 0 #2E58FF;
+    transform: scale(1.05);
+}
+
+/* Estilo da imagem sobre */
+
+.foto-sobre img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+
+
+/* Estilo do Projetos */
+
+section.projetos {
+    padding: 80px 4%;
+    background-color:white;
+    
+}
+
+.portifolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+    
+
+}
+
+.portifolio-content a {
+    text-decoration: none;
+    color: #000000;
+}
+.row img {
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+
+}
+
+.row {
+    background: #ffffff7f;
+    border-radius: 28px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 5px #000000;
+    padding: 20px;
+    transition: all .50s ease;
+}
+
+.main-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    
+}
+
+.row h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Electrolize", sans-serif;
+    color: #5e5252;
+
+}
+
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #000000;
+    color: #fff;
+}
+
+.row h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: "Electrolize", sans-serif;
+}
+
+.row:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px #000000;
+    cursor: pointer;
+}
+
+
+
+/* Estilo Contato */
+
+section.contato {
+    padding: 80px 4%;
+    background-image: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(https://www.rammaheshwari.com/assets/svg/common-bg.svg);;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+form input {
+    width: 100%;
+
+}
+
+.contato .txt-contato p {
+    font-family: "Electrolize", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+/* Estilo da box */
+
+.form-box {
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 4rem;
+    max-width: 500px;
+    text-align: center;
+    width: 95%;
+    border-radius: 10px;
+    margin: 4rem auto 0 auto;
+    
+}
+
+form input, form textarea {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #ebebeb; 
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 100%;
+    font-family: "Electrolize", sans-serif;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #2E58FF;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0 0 10px 0 #2E58FF;
+    transform: scale(1.05);
+}
+
+/* Estilo do Footer */
+
+footer {
+    padding: 40px 4%;
+    background-color: black;
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .line-footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+footer .txt-footer h2 {
+    font-family: 'Electrolize', sans-serif;
+    color: #eee;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+footer .txt-footer p {
+    font-family: "Electrolize", sans-serif;
+    font-size: 14px;
+    color: #aaa;
+    margin: 10px 0;
+}
+
+footer .social-footer {
+    text-align: right;
+}
+
+footer .social-footer h2 {
+    display: none;
+}
+
+footer .social-footer a {
+    margin-left: 10px;
+    color: #aaa;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-footer a:hover {
+    color: #fff;
+}
+
+footer .copy {
+    padding: 20px 0;
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+ }
+
+ /* Responsividade */
+
+/* Responsividade */
+
+@media screen and (max-width: 850px) {
+
+    /* Estilos Gerais */
+
+    .flex {
+        flex-direction: column;
+    }
+
+
+    /*Estilo do Header - Menu */
+
+    .nav-item {
+        display: none;
+    }
+
+    .menu-mobile-icon {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+
+    .open{
+        display: block;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .interface {
+        padding: 0 4%;
+    }
+
+    section.topo-site .txt-topo-site h1 {
+        font-size: 36px;
+        text-align: center;
+        
+    }
+
+    .foto-sobre img {
+        width: 100%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Centralize verticalmente */
+        gap: 20px; /* Ajuste o espaçamento entre os elementos */
+    }
+
+    .sobre .txt-sobre p {
+        display: none;
+    }
+
+    .sobre .txt-sobre .btn-social button {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .sobre .btn-social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center; /* Centralize horizontalmente */
+    }
+
+    .portifolio-content {
+        grid-template-columns: repeat(1, minmax(300px, auto));
+    }
+
+    .portifolio-content a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .row img {
+        height: auto;
+        width: 100%;
+        border-radius: 28px;
+        margin-bottom: 1.4rem;
+    
+    }
+
+    .row {
+        background: #ffffff7f;
+        border-radius: 28px;
+        border: 1px solid #000000;
+        box-shadow: 0 0 5px #000000;
+        padding: 20px;
+        transition: all .50s ease;
+    }
+
+    .main-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    
+        
+    }
+
+    .row h5 {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "Electrolize", sans-serif;
+        color: #5e5252;
+    
+    }
+
+    .row i{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        background: #000000;
+        color: #fff;
+    }
+
+    .row h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-family: "Electrolize", sans-serif;
+    }
+
+    .row:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 10px #000000;
+        cursor: pointer;
+    }
+
+    .contato .txt-contato p {
+        display: none;
+        
+    }
+
+    /* Estilo do Footer */
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .social-footer {
+        text-align: center;
+    }
+
+    footer .social-footer h2 {
+        display: block;
+    }
+
+    footer .social-footer a {
+        margin-left: 0;
+    }
+
+    footer .txt-footer h2 {
+        text-align: center;
+    }
+
+    .responsive-text {
+        display: none; /* Oculta o texto padrão */
+    }
+
+    .mobile-text {
+        display: block; /* Exibe o texto específico para dispositivos móveis */
+    }
+
+}
+
+
